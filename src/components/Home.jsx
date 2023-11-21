@@ -1,7 +1,5 @@
 import React from 'react'
 import FileList from './FileList'
-import FileSelector from './FileSelector'
-import exitIcon from '../assets/exit.svg'
 
 const Home = ({ roomCode, setRoomCode }) => {
   return (
