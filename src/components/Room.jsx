@@ -48,6 +48,10 @@ const Room = ({setRoomCode}) => {
   return (
     <div className='container max-w-[380px] flex flex-col justify-between shadow-xl max-sm:shadow-none bg-white p-4 rounded-xl'>
       <div className="logo font-bold text-3xl max-sm:text-2xl text-center ">Share<span className='bg-slate-600 rounded text-white font-medium px-[3px] ml-[2px]'>Hub</span></div>
+      <div className="desc text-center my-4">
+        <h3 className='text-xl font-semibold text-slate-600 mb-7'>Simple and Secure File Transfer</h3>
+        <p className='text-slate-900'>No Login/Signup Needed <br />Just Enter a same random room code on different devices and experience seamless file transfer.</p>
+      </div>
       <form className="input mt-8 border-2 border-slate-600 w-full text-xl flex justify-between rounded-lg overflow-hidden"
       onSubmit={(e) => {
         e.preventDefault();
@@ -59,6 +63,7 @@ const Room = ({setRoomCode}) => {
           <i class="fa-solid fa-arrow-right-to-bracket"></i> Enter
         </button>
       </form>
+
     </div>
   )
 }
